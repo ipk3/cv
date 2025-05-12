@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>İpek | Personel Website </title>
+  <link rel="stylesheet" href="cv1.css" />
+  <script defer src="script.js"></script>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">İpek</div>
+    <div id="hamburger-button" onclick="toggleMenu()"></div>
+    <ul class="height-0">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>  
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="index.html">🇹🇷Türkçe</a></li>
+    </ul>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-text">
+      <h1>Hello, I'm İpek</h1>
+      <img src="cvFoto/profile_photo.jpg" alt="İpek's Photo" class="profile-photo">
+      <p>I'm 19 years old. I'm a first year software engineering student at Inonu University.</p>
+      <a href="projects.html" class="btn">View My Projects</a>
+    </div>
+  </section>
+
+  <br><br>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About</h2>
+    <p>I've been interested in software since my childhood. I'm currently learning on C, HTML, Java Script, css. My English level is B1 and I'm trying to improve myself more.</p>
+    <br>
+    <a href="about.html" class="btn">More</a>
+  </section>
+
+  <!--Education Section-->
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <p>I went to primary, middle and high school in Istanbul. This year I started studying at Inonu University in Malatya.</p>
+    <br>
+    <a href="education.html" class="btn">More</a>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Portfolio Site</h3>
+        <p>My code is still at a basic level, but I'm improving step by step.</p>
+      </div>
+      <div class="project-card">
+        <h3>Snake Game</h3>
+        <p>A basic pixel snake game</p>
+      </div>
+    </div>
+    <br>
+    <a href="projects.html" class="btn">All Projects</a>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <div class="contact">
+
+      <!-- E-posta -->
+      <div class="contact-card">
+        <p>To contact me send e-mail</p>
+        <div class="email-icon" onclick="openEmailModal()">
+          <i class="fa-solid fa-envelope email-logo"></i>
+        </div>
+      </div>
+
+      <!-- Modal Kutusu -->
+      <div id="emailModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeEmailModal()">&times;</span>
+          <h2>Send E-mail</h2>
+          <form id="emailForm">
+            <label for="email">E-mail:</label>
+            <div class="input-container">
+              <input type="email" id="email" name="email" required maxlength="50" />
+              <div class="char-count" id="emailCount">0/50</div>
+            </div>
+
+            <label for="message">Message:</label>
+            <div class="input-container">
+              <textarea id="message" name="message" required rows="4" maxlength="500"></textarea>
+              <div class="char-count" id="messageCount">0/500</div>
+            </div>
+            
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+
+      <p style="padding-top: 60px;">or</p>
+
+      <!-- Social Meida -->
+      <div class="contact-card">
+        <p>you can use my social media accounts</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/ipknr_krn/" target="_blank">
+            <i class="fab fa-instagram instagram-logo"></i>
+          </a>
+          <a href="https://www.linkedin.com/feed/" target="_blank">
+            <i class="fab fa-linkedin linkedin-logo"></i>
+          </a>
+          <a href="https://github.com/ipk3" target="_blank">
+            <i class="fab fa-github github-logo"></i>
+          </a>
+      </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 ipek</p>
+  </footer>
+
+  
+
+</body>
+</html>

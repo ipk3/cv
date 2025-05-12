@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>İpek | Kişisel Web Sayfası</title>
+  <link rel="stylesheet" href="cv1.css" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Navbar --> 
+  <header class="navbar">
+    <div class="logo">İpek</div>
+    <div id="hamburger-button" onclick="toggleMenu()"></div>
+    <ul class="height-0">
+      <li><a href="#hero">Anasayfa</a></li>
+      <li><a href="#about">Hakkımda</a></li>
+      <li><a href="#education">Eğitim</a></li>        
+      <li><a href="#projects">Projeler</a></li>        
+      <li><a href="#contact">İletişim</a></li>       
+      <li><a href="index-en.html">🇬🇧English</a></li>   
+    </ul>
+
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-text">
+      <h1>Merhaba, ben İpek</h1>
+      <img src="cvFoto/profile_photo.jpg" alt="İpek'in Fotoğrafı" class="profile-photo">
+      <p>19 yaşındayım. İnönü Üniversitesi'nde 1. sınıf yazılım mühendisliği okuyorum. </p>
+      <a href="projeler.html" class="btn">Projelerime Göz At</a>
+    </div>
+  </section>
+
+  <br><br>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>Hakkımda</h2>
+    <p>Yazılıma olan ilgim çocuk yaşta başladı. Şu anda C, HTML, Java Script, css üzerinde çalışıyorum. B1 seviye ingilizcem var ve daha da geliştirmeye çalışıyorum. </p>
+    <br>
+    <a href="hakkimda.html" class="btn">Daha Fazla</a>
+  </section>
+
+  <!--Education Section-->
+  <section id="education" class="section">
+    <h2>Eğitim</h2>
+    <p>İlkokul, ortaokul ve liseyi İstanbul'da okudum. Bu sene Malatya'da İnönü Üniversitesi'nde okumaya başladım.</p>
+    <br>
+    <a href="egitim.html" class="btn">Daha Fazla</a>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projeler</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Portföy Sitesi</h3>
+        <p>Henüz basit, temel düzeyde kodlarım var ama adım adım gelişiyorum.</p>
+      </div>
+      <div class="project-card">
+        <h3>Yılan Oyunu</h3>
+        <p>Pixel tabanlı basit bir yılan oyunu.</p>
+      </div>
+    </div>
+    <br>
+    <a href="projeler.html" class="btn">Tüm Projeler</a>
+  </section>
+
+  <!-- Contact Section -->
+<section id="contact" class="section">
+  <h2>İletişim</h2>
+  <div class="contact">
+
+  <!-- E-posta -->
+<div class="contact-card">
+  <p>Benimle iletişime geçmek için e-posta gönder</p>
+  <div class="email-icon" onclick="openEmailModal()">
+    <i class="fa-solid fa-envelope email-logo"></i>
+  </div>
+</div>
+
+<!-- Modal Kutusu -->
+<div id="emailModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeEmailModal()">&times;</span>
+    <h2>E-posta Gönder</h2>
+    <form id="emailForm">
+      <label for="email">E-posta:</label>
+      <div class="input-container">
+        <input type="email" id="email" name="email" required maxlength="50" />
+        <div class="char-count" id="emailCount">0/50</div>
+      </div>
+
+      <label for="message">Mesaj:</label>
+      <div class="input-container">
+        <textarea id="message" name="message" required rows="4" maxlength="500"></textarea>
+        <div class="char-count" id="messageCount">0/500</div>
+      </div>
+      
+      <button type="submit">Gönder</button>
+    </form>
+  </div>
+</div>
+
+    <p style="padding-top: 60px;">ya da</p>
+
+    <!-- Sosyal Medya -->
+    <div class="contact-card">
+      <p>Sosyal medyalarımı kullanabilirsin</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/ipknr_krn/" target="_blank">
+          <i class="fab fa-instagram instagram-logo"></i>
+        </a>
+        <a href="https://www.linkedin.com/feed/" target="_blank">
+          <i class="fab fa-linkedin linkedin-logo"> </i>
+        </a>
+        <a href="https://github.com/ipk3" target="_blank">
+          <i class="fab fa-github github-logo"> </i>
+        </a>
+      </div>
+      </div>
+    </div>
+
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 ipek</p>
+  </footer>
+
+</body>
+</html>
+
+
+
